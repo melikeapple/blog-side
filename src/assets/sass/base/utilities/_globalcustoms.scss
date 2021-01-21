@@ -1,0 +1,54 @@
+//Global custom Chevron Right And Left icons//
+$bg-right-color: whitesmoke;
+$bg-left-color: #f1efef;
+
+.left-button {
+  background: $bg-right-color;
+  width: 25px;
+  height: 25px;
+  color: grey;
+
+}
+
+.right-button {
+  background: $bg-left-color;
+  width: 25px;
+  height: 25px;
+  color: gray;
+}
+
+.play-button {
+  width: 36px;
+  height: 36px;
+  background: #ffffff;
+  border-radius: 50%;
+  position: relative;
+  left: 145px;
+  bottom: 125px;
+
+  .play-arrow {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    color: #a09d9d;
+    font-size: 20px;
+  }
+}
+
+//Global custom circle image, title date font sizes //
+
+.small-description-image {
+  object-fit: cover;
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+}
+
+.small-desc-title {
+  font-weight: 400;
+  font-size: 12px;
+
+  p {
+    padding-top: 2px;
+  }
+}
