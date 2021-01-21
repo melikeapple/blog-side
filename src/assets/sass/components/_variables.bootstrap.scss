@@ -1,19 +1,18 @@
 // Spacing
 
-$spacer: 16px !default;
 $spacers: (
-      0: 0,
-      1: 2px,
-      2: 4px,
-      3: 6px,
-      4: 8px,
-      5: 10px,
-      6: 12px,
-      7: 16px,
-      8: 24px,
-      9: 30px,
-      10: 32px
-     ) !default;
+  0: 0,
+  1: 2px,
+  2: 4px,
+  3: 6px,
+  4: 8px,
+  5: 10px,
+  6: 12px,
+  7: 16px,
+  8: 24px,
+  9: 30px,
+  10: 32px
+ );
 
 // Color system
 
@@ -30,15 +29,15 @@ $gray-900: #212529 !default;
 $black:    #000 !default;
 
 $grays: (
-        "100": $gray-100,
-        "200": $gray-200,
-        "300": $gray-300,
-        "400": $gray-400,
-        "500": $gray-500,
-        "600": $gray-600,
-        "700": $gray-700,
-        "800": $gray-800,
-        "900": $gray-900
+  "100": $gray-100,
+  "200": $gray-200,
+  "300": $gray-300,
+  "400": $gray-400,
+  "500": $gray-500,
+  "600": $gray-600,
+  "700": $gray-700,
+  "800": $gray-800,
+  "900": $gray-900
 ) !default;
 // Colors
 

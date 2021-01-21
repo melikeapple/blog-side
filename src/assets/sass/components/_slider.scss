@@ -1,13 +1,15 @@
-//Global custom Chevron Right And Left icons//
-$bg-right-color: whitesmoke;
-$bg-left-color: #f1efef;
+.slick-slider {
+  height: 100%;
 
-.left-button {
-  background: $bg-right-color;
-  width: 25px;
-  height: 25px;
-  color: grey;
+  .slick-list {
+    height: 100%;
+    margin-left: -16px;
+  }
+}
 
+.desc-text {
+  font-size: 14px;
+  text-align: left;
 }
 
 .right-button {
@@ -23,8 +25,8 @@ $bg-left-color: #f1efef;
   background: #ffffff;
   border-radius: 50%;
   position: relative;
-  left: 145px;
-  bottom: 125px;
+  left: 156px;
+  bottom: 270px;
 
   .play-arrow {
     position: absolute;
@@ -34,8 +36,6 @@ $bg-left-color: #f1efef;
     font-size: 20px;
   }
 }
-
-//Global custom circle image, title date font sizes //
 
 .small-description-image {
   object-fit: cover;
@@ -48,7 +48,4 @@ $bg-left-color: #f1efef;
   font-weight: 400;
   font-size: 12px;
 
-  p {
-    padding-top: 2px;
-  }
 }

@@ -1,0 +1,21 @@
+.section {
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    border-bottom: 1px solid get($colors,color-grays-3);
+    &::before {
+      content: "";
+      background: get($colors,color-light-green-500);
+      width: 60px;
+      height: 2px;
+      position: absolute;
+      left: 0;
+      bottom: -1px;
+      z-index: 1;
+    }
+  }
+  &-body {
+    padding: 15px 0;
+  }
+}

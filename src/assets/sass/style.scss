@@ -1,8 +1,16 @@
 //Font Family
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap');
 
-//Functions
-@import "base/functions";
+//Base
+@import "base/functions/index";
+@import "base/mixins/index";
+
+//Variables
+@import "base/variables.base";
+
+@import "base/utilities/index";
+
+@import "components/variables.bootstrap";
 
 // Framework Includes
 @import "~bootstrap/scss/bootstrap";

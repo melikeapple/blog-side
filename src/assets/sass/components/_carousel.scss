@@ -1,8 +1,3 @@
-body {
-  height: 100%;
-  width: 100%;
-}
-
 .carousel-section {
   background: #f2eeee;
   padding: 14px 14px;
@@ -10,20 +5,34 @@ body {
 
 /*Carousel prev-next icon customize start */
 .carousel-control-prev-icon {
-  position: absolute;
+  position: relative;
   width: 34px;
   height: 34px;
-  left: 0;
+  left: -66px;
   color: gray;
   background: white;
+
+  .prev-icon {
+    position: absolute;
+    right: 6px;
+    top: 5px;
+    color: get($colors, color-grays-1);
+  }
 }
 
 .carousel-control-next-icon {
-  position: absolute;
+  position: relative;
   width: 34px;
   height: 34px;
   background: #4242D4;
-  right: 0;
+  right: -66px;
+
+  .next-icon {
+    position: absolute;
+    left: 6px;
+    top: 4px;
+    color: get($colors, color-grays-2);
+  }
 }
 
 /*Carousel prev-next icon customize end*/
