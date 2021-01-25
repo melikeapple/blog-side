@@ -1,0 +1,20 @@
+.postcard {
+
+  &-desc {
+    display: flex;
+  }
+
+  &-author {
+
+    &-img {
+      width: 25px;
+      height: 25px;
+    }
+
+  }
+  &-md-img {
+    width: 100px;
+    height: 100px;
+  }
+
+}

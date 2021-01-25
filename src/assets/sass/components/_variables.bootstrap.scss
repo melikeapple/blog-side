@@ -51,3 +51,15 @@ $yellow:  #ffc107 !default;
 $green:   #198754 !default;
 $teal:    #20c997 !default;
 $cyan:    #0dcaf0 !default;
+
+// Border radius
+$border-radius:               0 !default;
+$border-radius-sm:            .2rem !default;
+$border-radius-lg:            .3rem !default;
+$border-radius-pill:          50rem !default;
+
+// Allows for customizing button radius independently from global border radius
+$btn-border-radius:           $border-radius !default;
+$btn-border-radius-sm:        $border-radius-sm !default;
+$btn-border-radius-lg:        $border-radius-lg !default;
+

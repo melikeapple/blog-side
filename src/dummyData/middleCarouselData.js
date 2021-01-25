@@ -23,7 +23,7 @@ const data = [
   },
   {
     id: 4,
-    title: "Lorem ipsum dolar sined fmrewst smssns denemesi bedava",
+    title: "Lorem ipsum dolar sined ",
     desc:
       "Yaygın inancın tersine, Lorem Ipsum rastgele sözcüklerden oluşmaz. Kökleri M.Ö. 45 tarihinden bu yana klasik Latin edebiyatına...",
     img: "https://picsum.photos/1024/768?random=4",

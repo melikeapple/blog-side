@@ -4,12 +4,14 @@
   .slick-list {
     height: 100%;
     margin-left: -16px;
+
+    .slick-track {
+    }
   }
 }
 
-.desc-text {
-  font-size: 14px;
-  text-align: left;
+.text-size {
+  font-size: get($text-sizes,sm);
 }
 
 .right-button {
@@ -19,23 +21,6 @@
   color: gray;
 }
 
-.play-button {
-  width: 36px;
-  height: 36px;
-  background: #ffffff;
-  border-radius: 50%;
-  position: relative;
-  left: 156px;
-  bottom: 270px;
-
-  .play-arrow {
-    position: absolute;
-    right: 8px;
-    top: 8px;
-    color: #a09d9d;
-    font-size: 20px;
-  }
-}
 
 .small-description-image {
   object-fit: cover;
@@ -46,6 +31,6 @@
 
 .small-desc-title {
   font-weight: 400;
-  font-size: 12px;
+  font-size: get($text-sizes,xs);
 
 }

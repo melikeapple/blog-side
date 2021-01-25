@@ -4,10 +4,13 @@ import { Container, Row, Col } from "react-bootstrap";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import AccessTimeIcon from "@material-ui/icons/AccessTime";
+import carouselData from "../dummyData/carouselData";
 import PlayArrowOutlinedIcon from "@material-ui/icons/PlayArrowOutlined";
 import { Section } from "./content";
+import { PostCard } from "./content/PostCard";
 
 const MiddleCarousel = () => {
+  const data = carouselData;
   const slider = useRef(null);
 
   const settings = {
@@ -46,42 +49,35 @@ const MiddleCarousel = () => {
                 </Section.Header>
                 <Section.Body>
                   <Slider ref={slider} {...settings}>
-                    {Array.from({ length: 6 }).map((e, i) => (
-                      <div key={i} className="overflow-hidden pl-7">
-                        <img
-                          src={"https://picsum.photos/1024/768?random=" + i}
-                          alt="deneme"
-                          className="w-100"
-                        />
-                        <div className="d-flex flex-column mt-5">
-                          <h6 className="mt-0">Red Velvet Cakes</h6>
-                          <p className="text-secondary desc-text">
-                            Beşyüz yıl boyunca varlığını sürdürmek kalmaz,
-                            devamı...
-                          </p>
-                        </div>
-                        <div className="d-flex align-items-center justify-content-start text-muted ">
-                          <div className="d-flex small-desc-title">
-                            <img
-                              className="rounded-circle small-description-image mb-2"
-                              src={"https://picsum.photos/1024/768?random=" + i}
-                              alt="profile"
+                    {data && data.length === 6
+                      ? data.map((e, i) => (
+                          <PostCard className="ml-3 p-3 justify-content-between">
+                            <PostCard.Image
+                              src={e.img}
+                              imgClass="w-100"
+                              direction="top-right"
+                            >
+                              <div className="bg-light rounded-circle p-3 m-3">
+                                <PlayArrowOutlinedIcon className="text-muted text-sm-center" />
+                              </div>
+                            </PostCard.Image>
+                            <PostCard.Title>
+                              <div className="text-md font-900 color-black ">
+                                {e.title}
+                              </div>
+                              <div className="text-xs text-muted mt-1 mb-2">
+                                {e.desc.substring(0, 60)}...
+                              </div>
+                            </PostCard.Title>
+                            <PostCard.Desc
+                              className="d-flex"
+                              imgUrl={e.img}
+                              author={e.author}
+                              date={e.date}
                             />
-                            <p className="mt-2">Huskar</p>
-                          </div>
-                          <div className="d-flex small-desc-title ml-5">
-                            <AccessTimeIcon
-                              style={{ fontSize: 16 }}
-                              className="mr-1 mt-2"
-                            />
-                            <p className="ml-2 mt-2">20 Dec 2021</p>
-                          </div>
-                        </div>
-                        <div className="play-button">
-                          <PlayArrowOutlinedIcon className="play-arrow" />
-                        </div>
-                      </div>
-                    ))}
+                          </PostCard>
+                        ))
+                      : null}
                   </Slider>
                 </Section.Body>
               </Section>

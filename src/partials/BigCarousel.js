@@ -49,17 +49,22 @@ const BigCarousel = () => {
                               />
                               <div className="carousel-content-description">
                                 <div>
-                                  <Badge pill="true" variant="secondary">
-                                    ARTICLE
-                                  </Badge>
-                                  <Badge pill="true" variant="secondary">
-                                    READ
-                                  </Badge>
+                                  {v.categories && v.categories.length > 0
+                                    ? v.categories.map((cat, catIndex) => (
+                                        <Badge
+                                          key={catIndex}
+                                          pill={true}
+                                          variant="secondary"
+                                        >
+                                          {cat.name}
+                                        </Badge>
+                                      ))
+                                    : null}
                                 </div>
 
                                 <div>
                                   <h5 className="text-light">{v.title}</h5>
-                                  <p className="text-light pt-1">{v.desc}</p>
+                                  <p className="text-light pt-1">{v.title}</p>
                                 </div>
 
                                 <div className="description-container">
