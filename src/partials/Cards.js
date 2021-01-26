@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { useMediaQueries } from "@react-hook/media-query";
 import { Container, Row, Col, Badge, Button } from "react-bootstrap";
+
 import { Section } from "./content";
-import AccessTimeIcon from "@material-ui/icons/AccessTime";
 import carouselData from "../dummyData/carouselData";
 import { PostCard } from "./content/PostCard";
+import { SocialButton } from "./content/SocialButton";
 
 const Cards = () => {
   const data = carouselData;
@@ -73,18 +74,15 @@ const Cards = () => {
                               date={entity.date}
                             />
                             <PostCard.Footer>
-                              <div className="text-muted text-md mt-4 mb-5 bg-purple">
-                                {entity.desc.substring(0, 120)}...
+                              <div className="pt-2 text-muted text-md">
+                                {entity.desc}
                               </div>
-                              <div className="pt-5 mt-5">
-                                <Button
-                                  className="text-uppercase bg-color-purple-400 text-light my-5"
-                                  varian="secondary"
-                                  size="sm"
-                                >
-                                  READ MORE
-                                </Button>
-                              </div>
+                              <Button
+                                variant="slateblue"
+                                className="btn-flat mt-5 mb-4"
+                              >
+                                READ MORE
+                              </Button>
                             </PostCard.Footer>
                           </PostCard>
                         ))
@@ -126,7 +124,80 @@ const Cards = () => {
               <Section.Header>
                 <h5>Stay Connected</h5>
               </Section.Header>
-              <Section.Body>Vertical Cards</Section.Body>
+              <Section.Body>
+                <Row>
+                  <Col xs={12} sm={6}>
+                    <SocialButton
+                      icon="facebook"
+                      variant="primary"
+                      block
+                      title="99K"
+                      subtitle="followers"
+                    />
+                    <SocialButton
+                      icon="youtube"
+                      variant="lightred"
+                      block
+                      title="99K"
+                      subtitle="followers"
+                    />
+                    <SocialButton
+                      icon="apple"
+                      variant="teal"
+                      block
+                      title="99K"
+                      subtitle="followers"
+                    />
+                  </Col>
+                  <Col xs={12} sm={6}>
+                    <SocialButton
+                      icon="twitter"
+                      variant="info"
+                      block
+                      title="99K"
+                      subtitle="followers"
+                    />
+
+                    <SocialButton
+                      icon="redtwitter"
+                      variant="danger"
+                      block
+                      title="99K"
+                      subtitle="followers"
+                    />
+                    <SocialButton
+                      icon="instagram"
+                      variant="lightpurple"
+                      block
+                      title="99K"
+                      subtitle="followers"
+                    />
+                  </Col>
+                </Row>
+                <Container>
+                  <Row>
+                    <Col>
+                      <PostCard className="ml-5">
+                        <PostCard.Image
+                          direction="bottom-center"
+                          className="p-0"
+                          imgClass="postcard-lg-img"
+                          src="https://picsum.photos/1024/768?random=2"
+                        >
+                          <PostCard.Footer>
+                            <Button
+                              variant="slateblue"
+                              className="btn-flat text-sm"
+                            >
+                              PURCHASE NOW
+                            </Button>
+                          </PostCard.Footer>
+                        </PostCard.Image>
+                      </PostCard>
+                    </Col>
+                  </Row>
+                </Container>
+              </Section.Body>
             </Section>
           </Col>
         </Row>

@@ -38,6 +38,7 @@ const Image = ({
             "position-top-right": direction === "top-right",
             "position-bottom": direction === "bottom",
             "position-bottom-right": direction === "bottom-right",
+            "position-bottom-center": direction === "bottom-center",
           })}
         >
           {children}
@@ -66,8 +67,12 @@ const Desc = ({ imgUrl, date, author, className }) => {
   );
 };
 
-const Footer = ({ children }) => {
-  return <div>{children}</div>;
+const Footer = ({ children, desc, className, block }) => {
+  return (
+    <div className={classNames("postcard-footer", className, desc, block)}>
+      {children}
+    </div>
+  );
 };
 
 PostCard.Categories = Categories;

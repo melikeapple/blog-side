@@ -31,8 +31,9 @@ $colors: (
   "color-cyan-900": #007C92,
   "color-light-green-100": #D9F0D9,
   "color-light-green-500": #ABB400,
-  "color-purple-500": #4242D4,
+  "color-purple-500": #4848cd,
   "color-purple-400":#4141a7,
+  "color-purple-300":#6A5ACD,
   "color-purple-900": #5E2750,
   "color-orange-500": #EB9700,
   "color-amber-100": #FCF0D9,
@@ -85,6 +86,11 @@ $font-weights: (
     position: absolute;
     bottom: 0;
     right: 0;
+  }
+  &-bottom-center {
+    position: absolute;
+    left: 70px;
+    top: 190px;
   }
 }
 

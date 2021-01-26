@@ -9,8 +9,10 @@ const Header = ({ children }) => {
   return <div className={classNames("section-header")}>{children}</div>;
 };
 
-const Body = ({ children }) => {
-  return <div className={classNames("section-body")}>{children}</div>;
+const Body = ({ children, className }) => {
+  return (
+    <div className={classNames("section-body", className)}>{children}</div>
+  );
 };
 
 Section.Header = Header;

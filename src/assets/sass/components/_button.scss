@@ -1,4 +1,5 @@
- .btn {
-  border-radius: unset;
-   padding: 5px 20px;
+.btn {
+  &-flat {
+    border-radius: unset;
+  }
 }

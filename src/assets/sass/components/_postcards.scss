@@ -12,9 +12,22 @@
     }
 
   }
+
   &-md-img {
     width: 100px;
     height: 100px;
+  }
+
+  &-lg-img {
+    position: relative;
+    margin-top: 40px;
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+  }
+
+  &-footer {
+
   }
 
 }
