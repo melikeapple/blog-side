@@ -3,11 +3,11 @@ import Slider from "react-slick";
 import { Container, Row, Col } from "react-bootstrap";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
-import AccessTimeIcon from "@material-ui/icons/AccessTime";
 import carouselData from "../dummyData/carouselData";
 import PlayArrowOutlinedIcon from "@material-ui/icons/PlayArrowOutlined";
 import { Section } from "./content";
 import { PostCard } from "./content/PostCard";
+import ListCard from "./ListCard";
 
 const MiddleCarousel = () => {
   const data = carouselData;

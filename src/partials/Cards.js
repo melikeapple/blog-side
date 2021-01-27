@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useMediaQueries } from "@react-hook/media-query";
 import { Container, Row, Col, Badge, Button } from "react-bootstrap";
-
 import { Section } from "./content";
 import carouselData from "../dummyData/carouselData";
 import { PostCard } from "./content/PostCard";
@@ -64,7 +63,7 @@ const Cards = () => {
                                 </Badge>
                               ))}
                             </PostCard.Image>
-                            <PostCard.Title className="color-purple-500 mt-3 text-lg font-600">
+                            <PostCard.Title className="color-purple-500 mt-5 mb-2 text-lg font-600">
                               {entity.title}
                             </PostCard.Title>
                             <PostCard.Desc
@@ -74,7 +73,7 @@ const Cards = () => {
                               date={entity.date}
                             />
                             <PostCard.Footer>
-                              <div className="pt-2 text-muted text-md">
+                              <div className="mb-3 mt-2 text-muted text-md">
                                 {entity.desc}
                               </div>
                               <Button

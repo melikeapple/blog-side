@@ -7,8 +7,6 @@ const data = [
     img: "https://picsum.photos/1024/768?random=1",
     author: "share",
     date: "21 March 2019",
-    social: "facebook",
-    likes: "99k",
     categories: [
       {
         id: 1,
@@ -28,8 +26,6 @@ const data = [
     img: "https://picsum.photos/1024/768?random=2",
     author: "share",
     date: "21 March 2019",
-    social: "twitter",
-    followers: "99k",
     categories: [
       {
         id: 1,
@@ -49,8 +45,6 @@ const data = [
     img: "https://picsum.photos/1024/768?random=3",
     author: "share",
     date: "21 March 2019",
-    social: "google",
-    followers: "99k",
     categories: [
       {
         id: 1,
@@ -71,8 +65,6 @@ const data = [
     img: "https://picsum.photos/1024/768?random=4",
     author: "share",
     date: "21 March 2019",
-    social: "redtwitter",
-    followers: "99k",
     categories: [
       {
         id: 1,
@@ -92,8 +84,6 @@ const data = [
     img: "https://picsum.photos/1024/768?random=5",
     author: "share",
     date: "21 March 2019",
-    social: "vomeo",
-    followers: "99k",
     categories: [
       {
         id: 1,
@@ -113,8 +103,6 @@ const data = [
     img: "https://picsum.photos/1024/768?random=6",
     author: "share",
     date: "21 March 2019",
-    social: "instagram",
-    followers: "99k",
     categories: [
       {
         id: 1,
