@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Card, Button, Badge } from "react-bootstrap";
+import { Container, Row, Col, Button, Badge, ListGroup } from "react-bootstrap";
 import { Section } from "./content/section";
 import carouselData from "../dummyData/carouselData";
 import { PostCard } from "./content/PostCard";
@@ -12,7 +12,9 @@ const ListCard = () => {
         <Row>
           <Col sm={8}>
             <Section>
-              <Section.Header>Latest News</Section.Header>
+              <Section.Header>
+                <h5>Latest News</h5>
+              </Section.Header>
               <Section.Body>
                 {data && data.length > 0
                   ? data.map((entity, index) => (
@@ -58,10 +60,81 @@ const ListCard = () => {
                       </Row>
                     ))
                   : null}
+                <Button
+                  block
+                  className="btn-flat font-weight-bold"
+                  variant="cream"
+                >
+                  LOAD MORE
+                </Button>
               </Section.Body>
             </Section>
           </Col>
-          <Col sm={4}>2.kısım</Col>
+          <Col sm={4}>
+            <Section>
+              <Section.Header>
+                <h5>Categories</h5>
+              </Section.Header>
+              <Section.Body>
+                <ListGroup className="d-flex">
+                  <ListGroup.Item className="d-flex justify-content-between">
+                    <div className="text-muted text-md">Articles</div>
+                    <a
+                      href=""
+                      className="text-muted text-md text-decoration-none"
+                    >
+                      (10)
+                    </a>
+                  </ListGroup.Item>
+                  <ListGroup.Item className="d-flex justify-content-between">
+                    <div className="text-muted text-md ">Tecnologies</div>
+                    <a
+                      href=""
+                      className="text-muted text-md text-decoration-none"
+                    >
+                      (13)
+                    </a>
+                  </ListGroup.Item>
+                  <ListGroup.Item className="d-flex justify-content-between">
+                    <div className="text-muted text-md">Life</div>
+                    <a
+                      href=""
+                      className="text-muted text-md text-decoration-none"
+                    >
+                      (18)
+                    </a>
+                  </ListGroup.Item>
+                  <ListGroup.Item className="d-flex justify-content-between">
+                    <div className="text-muted text-md">Travelling</div>
+                    <a
+                      href=""
+                      className="text-muted text-md text-decoration-none"
+                    >
+                      (13)
+                    </a>
+                  </ListGroup.Item>
+                  <ListGroup.Item className="d-flex justify-content-between">
+                    <div className="text-muted text-md">Healty</div>
+                    <a
+                      href=""
+                      className="text-muted text-md text-decoration-none"
+                    >
+                      (7)
+                    </a>
+                  </ListGroup.Item>
+                  <ListGroup.Item className="d-flex justify-content-between">
+                    <div className="text-muted text-md">Packages</div>
+                    <a
+                      href=""
+                      className="text-muted text-md text-decoration-none"
+                    >
+                      (7)
+                    </a>
+                  </ListGroup.Item>
+                </ListGroup>
+              </Section.Body>
+            </Section>
+          </Col>
         </Row>
       </Container>
     </>
