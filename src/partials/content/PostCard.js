@@ -1,5 +1,6 @@
 import React from "react";
 import classNames from "classnames";
+import { Badge } from "react-bootstrap";
 import AccessTimeIcon from "@material-ui/icons/AccessTime";
 
 const PostCard = ({ direction, className, children }) => {
@@ -48,19 +49,30 @@ const Image = ({
   );
 };
 
-const Desc = ({ imgUrl, date, author, className }) => {
+const Desc = ({ imgUrl, date, author, className, badge }) => {
   return (
     <div className={classNames("postcard-desc", className)}>
       <div className="d-flex align-items-center p-1">
-        <img
-          src={imgUrl}
-          alt=""
-          className="postcard-author-img rounded-circle mr-2 "
-        />
-        <div className="text-xs mr-4  text-muted font-500">{author}</div>
+        {author ? (
+          <>
+            <img
+              src={imgUrl || ""}
+              alt=""
+              className="postcard-author-img rounded-circle mr-2 "
+            />
+            <div className="text-xs mr-4  text-muted font-500">{author}</div>
+          </>
+        ) : (
+          <Badge
+            pill={true}
+            className="bg-color-light-blue  text-xxs color-grays-1 mt-2 font-weight-light"
+          >
+            {badge}
+          </Badge>
+        )}
       </div>
       <div className="d-flex align-items-center font-500">
-        <AccessTimeIcon className="text-xs mr-3 text-muted font-500" />
+        <AccessTimeIcon className="text-sm mr-3 text-muted font-500" />
         <div className="text-xxs text-muted font-500">{date}</div>
       </div>
     </div>

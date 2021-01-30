@@ -1,0 +1,45 @@
+// TABS
+
+.tabs-flat {
+  display: flex;
+  border-bottom: 1px solid #dfe0db;
+  .nav-item {
+    .nav-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: black;
+      background-color: #ECEDE7;
+      height: 100%;
+      font-size: 16px;
+      text-transform: uppercase;
+      font-weight: bold;
+      &.active {
+        background-color: #dfe0db;
+      }
+    }
+  }
+
+  &-fluid {
+    justify-content: space-between;
+    .nav-item {
+      flex: 1;
+    }
+  }
+
+  &-sm {
+    .nav-item {
+      .nav-link {
+        font-size: 10px;
+      }
+    }
+  }
+
+  &-lg {
+    .nav-item {
+      .nav-link {
+        font-size: 24px;
+      }
+    }
+  }
+}

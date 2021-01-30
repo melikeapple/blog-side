@@ -7,7 +7,6 @@ import carouselData from "../dummyData/carouselData";
 import PlayArrowOutlinedIcon from "@material-ui/icons/PlayArrowOutlined";
 import { Section } from "./content";
 import { PostCard } from "./content/PostCard";
-import ListCard from "./ListCard";
 
 const MiddleCarousel = () => {
   const data = carouselData;

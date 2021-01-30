@@ -17,7 +17,7 @@ $spacers: (
 // Color system
 
 $white: #fff !default;
-$cream : #eaeae5 !default;
+$lightgrey : #ecede7 !default;
 $gray-100: #f8f9fa !default;
 $gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
@@ -44,6 +44,7 @@ $grays: (
 // Colors
 
 $blue: #4e71ba !default;
+$lightblue: #1193FA !default;
 $slateblue: #6A5ACD !default;
 $indigo: #6610f2 !default;
 $purple: #6f42c1 !default;
@@ -57,11 +58,12 @@ $green: #198754 !default;
 $teal: #38d49e !default;
 $cyan: #0dcaf0 !default;
 $turquoise: #48d1cc !default;
-$cream:#E9E1D1 !default;
+$lightgrey:#ecede7 !default;
 
 // scss-docs-start colors-map
 $colors: (
         "blue": $blue,
+        "lightblue": $lightblue,
         "slateblue":$slateblue,
         "indigo": $indigo,
         "purple": $purple,
@@ -76,7 +78,7 @@ $colors: (
         "teal": $teal,
         "cyan": $cyan,
         "white": $white,
-        "cream":$cream,
+        "lightgrey":$lightgrey,
         "gray": $gray-600,
         "gray-dark": $gray-800
 ) !default;
@@ -90,12 +92,15 @@ $info: $cyan !default;
 $warning: $yellow !default;
 $danger: $red !default;
 $lightred: $lightred !default;
+$lightblue: $lightblue !default;
 $lightpurple: $lightpurple !default;
 $light: $gray-100 !default;
+$lightgrey: $lightgrey !default;
 $dark: $gray-900 !default;
 
 $theme-colors: (
 "primary": $primary,
+"lightblue": $lightblue,
 "secondary": $secondary,
 "purple": $purple,
 "teal": $teal,
@@ -107,7 +112,7 @@ $theme-colors: (
 "lightpurple":$lightpurple,
 "slateblue":$slateblue,
 "light": $light,
-"cream": $cream,
+"lightgrey":$lightgrey,
 "dark": $dark
 ) !default;
 

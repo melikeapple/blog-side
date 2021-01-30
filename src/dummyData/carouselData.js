@@ -1,7 +1,7 @@
 const data = [
   {
     id: 1,
-    title: "Lorem ipsum dolar sine.",
+    title: "Lorem ipsum dolar sineipsum dolar sine.",
     desc:
       "Yaygın inancın tersine, Lorem Ipsum rastgele sözcüklerden oluşmaz. Kökleri M.Ö. 45 tarihinden bu yana klasik Latin edebiyatına...",
     img: "https://picsum.photos/1024/768?random=1",
@@ -20,7 +20,7 @@ const data = [
   },
   {
     id: 2,
-    title: "Lorem ipsum dolar sine.",
+    title: "Lorem ipsum dolar sineipsum dolar sine.",
     desc:
       "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use ",
     img: "https://picsum.photos/1024/768?random=2",
