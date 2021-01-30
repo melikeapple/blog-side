@@ -3,6 +3,7 @@ import { Container, Row, Col, ListGroup, Nav, Tab } from "react-bootstrap";
 import LatestNews from "./layout/LatestNews";
 import Categories from "./layout/Categories";
 import MostPopular from "./layout/MostPopular";
+import PopularVideos from "./layout/PopularVideos";
 
 const ListCard = () => {
   return (
@@ -15,6 +16,7 @@ const ListCard = () => {
           <Col sm={4}>
             <Categories />
             <MostPopular />
+            <PopularVideos />
           </Col>
         </Row>
       </Container>

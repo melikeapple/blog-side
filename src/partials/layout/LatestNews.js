@@ -6,7 +6,6 @@ import carouselData from "../../dummyData/carouselData";
 
 const LatestNews = () => {
   const data = carouselData;
-
   return (
     <>
       <Section>
